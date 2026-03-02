@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "paper_id": "REPLACE_ME",
+  "citation": "REPLACE_ME",
+  "identifier": "arXiv:xxxx.xxxxx | DOI:...",
+  "url": "REPLACE_ME",
+  "summary_own_words": "REPLACE_ME",
+  "main_contributions": [
+    "REPLACE_ME"
+  ],
+  "assumptions": [
+    "REPLACE_ME"
+  ],
+  "methods": [
+    "REPLACE_ME"
+  ],
+  "key_equations": [
+    {
+      "name": "REPLACE_ME",
+      "latex": "REPLACE_ME",
+      "notes": "REPLACE_ME"
+    }
+  ],
+  "experiments": {
+    "tasks": [
+      "REPLACE_ME"
+    ],
+    "baselines": [
+      "REPLACE_ME"
+    ],
+    "metrics": [
+      "REPLACE_ME"
+    ],
+    "notes": "REPLACE_ME"
+  },
+  "limitations": [
+    "REPLACE_ME"
+  ],
+  "reproducibility": {
+    "code_available": "yes|no|unknown",
+    "missing_details": [
+      "REPLACE_ME"
+    ],
+    "replication_plan": [
+      "REPLACE_ME"
+    ]
+  },
+  "student_questions": [
+    "REPLACE_ME"
+  ]
+}

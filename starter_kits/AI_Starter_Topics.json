@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "track": "AI",
+  "recommended_sequence": [
+    {
+      "topic_id": "ai__supervised_basics",
+      "title": "Supervised Learning Basics",
+      "difficulty": "beginner",
+      "core_concepts": [
+        "loss functions",
+        "generalization",
+        "regularization"
+      ],
+      "key_references": [
+        {
+          "type": "book",
+          "citation": "Murphy (2022), Probabilistic Machine Learning",
+          "identifier": "ISBN"
+        },
+        {
+          "type": "book",
+          "citation": "Goodfellow, Bengio, Courville (2016), Deep Learning",
+          "identifier": "ISBN"
+        }
+      ]
+    },
+    {
+      "topic_id": "ai__optimization",
+      "title": "Optimization for Deep Learning (SGD, AdamW, schedules)",
+      "difficulty": "intermediate",
+      "core_concepts": [
+        "gradient descent",
+        "momentum",
+        "adaptive methods",
+        "weight decay"
+      ],
+      "key_references": [
+        {
+          "type": "paper",
+          "citation": "Loshchilov & Hutter (2019), Decoupled Weight Decay Regularization (AdamW)",
+          "identifier": "arXiv:1711.05101"
+        }
+      ]
+    },
+    {
+      "topic_id": "ai__transformers",
+      "title": "Transformers (Attention, Masking, Multi-head)",
+      "difficulty": "intermediate",
+      "core_concepts": [
+        "scaled dot-product attention",
+        "positional encodings",
+        "causal masking"
+      ],
+      "key_references": [
+        {
+          "type": "paper",
+          "citation": "Vaswani et al. (2017), Attention Is All You Need",
+          "identifier": "arXiv:1706.03762"
+        }
+      ]
+    },
+    {
+      "topic_id": "ai__llm_training",
+      "title": "LLM Training (Causal LM, tokenization, perplexity, stability)",
+      "difficulty": "advanced",
+      "core_concepts": [
+        "cross-entropy",
+        "label shift",
+        "perplexity",
+        "data leakage"
+      ],
+      "key_references": [
+        {
+          "type": "paper",
+          "citation": "Kaplan et al. (2020), Scaling Laws for Neural Language Models",
+          "identifier": "arXiv:2001.08361"
+        }
+      ]
+    },
+    {
+      "topic_id": "ai__peft_quant",
+      "title": "PEFT and Quantization (LoRA / QLoRA / 4-bit)",
+      "difficulty": "advanced",
+      "core_concepts": [
+        "low-rank adapters",
+        "memory efficiency",
+        "quantization error"
+      ],
+      "key_references": [
+        {
+          "type": "paper",
+          "citation": "Hu et al. (2021), LoRA",
+          "identifier": "arXiv:2106.09685"
+        }
+      ]
+    },
+    {
+      "topic_id": "ai__evaluation",
+      "title": "Evaluation and Robustness (calibration, OOD, adversarial)",
+      "difficulty": "advanced",
+      "core_concepts": [
+        "calibration",
+        "OOD detection",
+        "robustness metrics"
+      ],
+      "key_references": [
+        {
+          "type": "book",
+          "citation": "Murphy (2022)",
+          "identifier": "ISBN"
+        }
+      ]
+    }
+  ]
+}

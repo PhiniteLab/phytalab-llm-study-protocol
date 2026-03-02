@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "theorem_id": "REPLACE_ME",
+  "name": "REPLACE_ME",
+  "domain": "AI|RL|Control|Optimization",
+  "statement_latex": "REPLACE_ME",
+  "assumptions": [
+    "REPLACE_ME"
+  ],
+  "notation": [
+    {
+      "symbol": "REPLACE_ME",
+      "meaning": "REPLACE_ME"
+    }
+  ],
+  "proof_steps": [
+    {
+      "step": 1,
+      "text": "REPLACE_ME",
+      "equations": [
+        "REPLACE_ME"
+      ]
+    },
+    {
+      "step": 2,
+      "text": "REPLACE_ME",
+      "equations": [
+        "REPLACE_ME"
+      ]
+    }
+  ],
+  "lemmas_needed": [
+    "REPLACE_ME"
+  ],
+  "gaps_or_uncertainties": [
+    "REPLACE_ME"
+  ],
+  "algorithmic_consequences": [
+    "REPLACE_ME"
+  ],
+  "math_to_code": [
+    {
+      "equation": "REPLACE_ME",
+      "code_component": "REPLACE_ME",
+      "tests": [
+        "REPLACE_ME"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "type": "book|paper",
+      "citation": "REPLACE_ME",
+      "identifier": "REPLACE_ME"
+    }
+  ]
+}

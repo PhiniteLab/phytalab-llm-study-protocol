@@ -1,0 +1,162 @@
+{
+  "schema_version": "1.0",
+  "track": "RL",
+  "recommended_sequence": [
+    {
+      "topic_id": "rl__mdp_bellman",
+      "title": "MDPs and Bellman Equations",
+      "difficulty": "beginner",
+      "why_it_matters": "Foundation for value functions, dynamic programming, and RL algorithms.",
+      "core_concepts": [
+        "MDP",
+        "policy",
+        "value function",
+        "Bellman expectation/optimality"
+      ],
+      "key_references": [
+        {
+          "type": "book",
+          "citation": "Sutton & Barto (2018), Reinforcement Learning: An Introduction",
+          "identifier": "ISBN"
+        },
+        {
+          "type": "book",
+          "citation": "Puterman (1994), Markov Decision Processes",
+          "identifier": "ISBN"
+        }
+      ]
+    },
+    {
+      "topic_id": "rl__dynamic_programming",
+      "title": "Dynamic Programming (Policy Iteration, Value Iteration)",
+      "difficulty": "beginner",
+      "core_concepts": [
+        "policy evaluation",
+        "policy improvement",
+        "contraction mapping"
+      ],
+      "key_references": [
+        {
+          "type": "book",
+          "citation": "Sutton & Barto (2018)",
+          "identifier": "ISBN"
+        }
+      ]
+    },
+    {
+      "topic_id": "rl__td_mc",
+      "title": "Monte Carlo and Temporal-Difference Learning",
+      "difficulty": "beginner",
+      "core_concepts": [
+        "MC estimation",
+        "TD(0)",
+        "bootstrapping",
+        "bias-variance"
+      ],
+      "key_references": [
+        {
+          "type": "book",
+          "citation": "Sutton & Barto (2018)",
+          "identifier": "ISBN"
+        }
+      ]
+    },
+    {
+      "topic_id": "rl__policy_gradient",
+      "title": "Policy Gradient and Actor-Critic",
+      "difficulty": "intermediate",
+      "core_concepts": [
+        "log-derivative trick",
+        "REINFORCE",
+        "baseline",
+        "advantage"
+      ],
+      "key_references": [
+        {
+          "type": "paper",
+          "citation": "Williams (1992), REINFORCE",
+          "identifier": "DOI"
+        },
+        {
+          "type": "book",
+          "citation": "Sutton & Barto (2018)",
+          "identifier": "ISBN"
+        }
+      ]
+    },
+    {
+      "topic_id": "rl__ppo",
+      "title": "PPO and Trust-Region Ideas",
+      "difficulty": "intermediate",
+      "core_concepts": [
+        "clipped objective",
+        "KL constraint",
+        "stability"
+      ],
+      "key_references": [
+        {
+          "type": "paper",
+          "citation": "Schulman et al. (2017), Proximal Policy Optimization Algorithms",
+          "identifier": "arXiv:1707.06347"
+        }
+      ]
+    },
+    {
+      "topic_id": "rl__sac",
+      "title": "Soft Actor-Critic (Entropy-Regularized RL)",
+      "difficulty": "advanced",
+      "core_concepts": [
+        "maximum entropy RL",
+        "soft Bellman backup",
+        "temperature"
+      ],
+      "key_references": [
+        {
+          "type": "paper",
+          "citation": "Haarnoja et al. (2018), Soft Actor-Critic",
+          "identifier": "arXiv:1801.01290"
+        }
+      ]
+    },
+    {
+      "topic_id": "rl__offline_rl",
+      "title": "Offline RL (CQL / IQL and pitfalls)",
+      "difficulty": "advanced",
+      "core_concepts": [
+        "distribution shift",
+        "conservatism",
+        "value extrapolation"
+      ],
+      "key_references": [
+        {
+          "type": "paper",
+          "citation": "Kumar et al. (2020), Conservative Q-Learning",
+          "identifier": "arXiv:2006.04779"
+        },
+        {
+          "type": "paper",
+          "citation": "Kostrikov et al. (2021), Implicit Q-Learning",
+          "identifier": "arXiv:2110.06169"
+        }
+      ]
+    },
+    {
+      "topic_id": "rl__hjb_mpc_bridge",
+      "title": "HJB / MPC Connections (Control-Theoretic RL)",
+      "difficulty": "advanced",
+      "core_concepts": [
+        "HJB",
+        "PMP",
+        "MPC stability",
+        "approximate dynamic programming"
+      ],
+      "key_references": [
+        {
+          "type": "book",
+          "citation": "Bertsekas (2012), Dynamic Programming and Optimal Control",
+          "identifier": "ISBN"
+        }
+      ]
+    }
+  ]
+}

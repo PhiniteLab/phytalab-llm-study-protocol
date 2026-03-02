@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "topic_id": "rl__policy_gradient_theorem",
+  "title": "Policy Gradient Theorem",
+  "track": "RL",
+  "difficulty": "intermediate|advanced",
+  "learning_objective": "Explain and derive the policy gradient theorem and implement a baseline actor-critic.",
+  "prerequisites": [
+    "MDPs",
+    "Expectations and gradients",
+    "Stochastic policies"
+  ],
+  "assumptions": [
+    "Episodic MDP",
+    "Differentiable policy pi_theta(a|s)"
+  ],
+  "definitions": [
+    {
+      "term": "MDP",
+      "definition": "A tuple (S, A, P, r, gamma)."
+    },
+    {
+      "term": "Return",
+      "definition": "G_t = sum_{k>=0} gamma^k r_{t+k}."
+    }
+  ],
+  "key_equations": [
+    {
+      "name": "Objective",
+      "latex": "J(\\theta)=\\mathbb{E}_{\\tau\\sim\\pi_\\theta}[\\sum_{t=0}^{T-1} \\gamma^t r_t]",
+      "notes": "Expected discounted return."
+    }
+  ],
+  "theorems": [
+    {
+      "theorem_id": "pg_theorem",
+      "name": "Policy Gradient Theorem",
+      "statement_latex": " \\nabla_\\theta J(\\theta)=\\mathbb{E}_{\\pi_\\theta}\\left[\\sum_t \\nabla_\\theta \\log \\pi_\\theta(a_t\\mid s_t)\\, Q^{\\pi_\\theta}(s_t,a_t)\\right]",
+      "assumptions": [
+        "pi_theta is differentiable",
+        "Markov property"
+      ],
+      "proof_steps": [
+        "Write J as expectation over trajectories.",
+        "Differentiate under the integral sign.",
+        "Use log-derivative trick: \\nabla p = p \\nabla \\log p.",
+        "Rearrange to get the final expectation."
+      ],
+      "algorithmic_consequences": [
+        "REINFORCE estimator",
+        "Actor-Critic with baseline"
+      ],
+      "common_pitfalls": [
+        "High variance without baseline",
+        "Incorrect handling of episode termination"
+      ]
+    }
+  ],
+  "implementation_targets": [
+    "Implement REINFORCE with baseline",
+    "Implement Actor-Critic and run on CartPole"
+  ],
+  "verification_checklist": [
+    "Check the theorem derivation in a textbook or original paper",
+    "Verify sign conventions and discount handling",
+    "Confirm baseline does not introduce bias"
+  ],
+  "references": [
+    {
+      "type": "book",
+      "citation": "Sutton & Barto (2018), Reinforcement Learning: An Introduction",
+      "identifier": "ISBN",
+      "notes": "Policy gradient chapter"
+    },
+    {
+      "type": "paper",
+      "citation": "Williams (1992), Simple statistical gradient-following algorithms for connectionist reinforcement learning",
+      "identifier": "DOI/arXiv",
+      "notes": "REINFORCE"
+    }
+  ]
+}

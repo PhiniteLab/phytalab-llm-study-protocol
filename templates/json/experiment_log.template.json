@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "run_id": "REPLACE_ME",
+  "created_at": "REPLACE_ME",
+  "git_commit": "REPLACE_ME",
+  "environment": {
+    "python": "REPLACE_ME",
+    "os": "REPLACE_ME",
+    "cuda": "REPLACE_ME",
+    "libraries": {
+      "torch": "REPLACE_ME",
+      "gymnasium": "REPLACE_ME"
+    }
+  },
+  "config": {
+    "seed": 0,
+    "algorithm": "REPLACE_ME",
+    "hyperparameters": {
+      "lr": 0.0003,
+      "gamma": 0.99
+    }
+  },
+  "metrics": [
+    {
+      "step": 0,
+      "name": "return_mean",
+      "value": 0.0
+    }
+  ],
+  "artifacts": {
+    "checkpoints": [],
+    "plots": [],
+    "notes": "REPLACE_ME"
+  },
+  "observations": [
+    "REPLACE_ME"
+  ]
+}

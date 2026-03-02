@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "project_name": "REPLACE_ME",
+  "goal": "REPLACE_ME",
+  "repo_layout": [
+    "pyproject.toml",
+    "README.md",
+    "src/<project_name>/__init__.py",
+    "src/<project_name>/configs/",
+    "src/<project_name>/models/",
+    "src/<project_name>/algorithms/",
+    "src/<project_name>/utils/",
+    "src/<project_name>/train.py",
+    "src/<project_name>/eval.py",
+    "tests/"
+  ],
+  "interfaces": [
+    {
+      "component": "Policy",
+      "inputs": "state -> tensor",
+      "outputs": "action distribution"
+    },
+    {
+      "component": "Trainer",
+      "inputs": "config, env/data",
+      "outputs": "checkpoints, logs"
+    }
+  ],
+  "config_fields": [
+    "seed",
+    "device",
+    "learning_rate",
+    "batch_size",
+    "num_steps",
+    "eval_interval"
+  ],
+  "tests": [
+    {
+      "name": "test_shapes",
+      "goal": "Verify tensor shapes and broadcasting."
+    },
+    {
+      "name": "test_determinism",
+      "goal": "Same seed => same rollout (to tolerance)."
+    }
+  ],
+  "logging": {
+    "format": "jsonl",
+    "required_fields": [
+      "step",
+      "loss",
+      "metrics",
+      "wall_time",
+      "seed",
+      "git_commit"
+    ]
+  },
+  "deployment_notes": [
+    "Create a CLI entry point.",
+    "Package with a locked environment.",
+    "Document how to reproduce runs."
+  ]
+}
