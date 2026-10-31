@@ -1,4 +1,4 @@
-# PHYTALAB — Student Protocol Kit for Learning AI & RL with General LLMs
+# PYTHALAB — Student Protocol Kit for Learning AI & RL with General LLMs
 
 **Version:** 1.0  
 **Date:** 2026-03-02
